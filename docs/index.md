@@ -1,10 +1,3 @@
-# Hello World
+# HOME
 
-テストテストテスト
-
-$y=ax^2+bx+c$
-
-``` python
-print("Hello World")
-```
-
+どうしましょうね
