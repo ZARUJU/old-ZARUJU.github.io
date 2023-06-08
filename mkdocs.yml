@@ -41,7 +41,8 @@ markdown_extensions:
       use_pygments: true
       noclasses: true
       pygments_style: monokai
-      linenums: true
+      # 行番号の付加
+      # linenums: true
   # - pymdownx.details
   # - pymdownx.magiclink
   - pymdownx.critic
