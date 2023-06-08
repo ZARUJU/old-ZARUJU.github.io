@@ -12,13 +12,12 @@ theme:
     palette:
 
     # Light mode
-    - scheme: default
-      primary: indigo
-      accent: indigo
+    - scheme: slate
+      primary: blue
+      accent: blue
 
     features:
-      - navigation.tabs
-      - navigation.tabs.sticky
+      - navigation.top
 
 extra:
   generator: false
