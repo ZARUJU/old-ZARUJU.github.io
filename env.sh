@@ -9,4 +9,5 @@ if [ -d venv ];then
     source venv/bin/activate
 fi
 
-cd test
+cd MySite
+mkdocs serve
