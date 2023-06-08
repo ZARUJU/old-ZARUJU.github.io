@@ -12,38 +12,39 @@ theme:
     palette:
 
     # Light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: orange
+    - scheme: default
+      primary: indigo
       accent: indigo
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
 
-    # Dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: pink
-      accent: blue
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
+    features:
+      - navigation.tabs
+      - navigation.tabs.sticky
 
 extra:
+  generator: false
   homepage: https://zaruju.github.io/
+  social:
+    # - icon: fontawesome/brands/twitter
+    #   link: https://twitter.com/mebiusbox2
+    #   name: mebiusbox2 on Twitter
+    - icon: fontawesome/brands/github
+      link: https://github.com/ZARUJU
 
 # Extensions
 markdown_extensions:
-  - footnotes
-  # - attr_list
   - pymdownx.arithmatex:
       generic: true
-  # - pymdownx.superfences
-  # - pymdownx.details
-  # - pymdownx.magiclink
+  - footnotes
   - pymdownx.tasklist:
       custom_checkbox: true
   - def_list
+  - pymdownx.highlight:
+      use_pygments: true
+      noclasses: true
+      pygments_style: monokai
+      linenums: true
+  # - pymdownx.details
+  # - pymdownx.magiclink
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
@@ -54,12 +55,12 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-
   - toc:
       permalink: true
+  - admonition
 
 plugins:
-  - search
+  # - search
   - roamlinks 
 
 
