@@ -1,1 +1,40 @@
 site_name: My Docs
+
+nav:
+  - 初期画面: index.md
+  - introduction.md
+  - material.md
+  - section1:
+      section1-1:
+        section1-1-1:
+          section1-1-1.md
+      section1-2:
+        section1-2-1:
+          section1-2-1.md
+  - section2:
+    - page2-1.md
+    - page2-2.md
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: pink
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
