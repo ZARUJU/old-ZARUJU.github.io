@@ -59,7 +59,7 @@ markdown_extensions:
   - admonition
 
 plugins:
-  # - search
+  - search
   - roamlinks 
 
 
