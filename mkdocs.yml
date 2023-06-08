@@ -1,13 +1,17 @@
 site_name: ZARUJU
 
 theme:
+    font:
+      # text: Noto Sans JP
+      # code: Inconsolata
+
     name: 'material'
     palette:
 
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: pink
+      primary: orange
       accent: indigo
       toggle:
         icon: material/toggle-switch-off-outline
@@ -54,8 +58,9 @@ plugins:
 
 
 extra_javascript:
-  - javascripts/mathjax.js
+  - _javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/mermaid/dist/mermaid.min.js
 
+# -------------
